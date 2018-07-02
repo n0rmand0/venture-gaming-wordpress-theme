@@ -106,9 +106,9 @@ sql-dump-*.sql
 *.avi
 
 # Vendor (e.g. Composer)
-composer.phar
-vendor/*
-!vendor/.gitkeep
+--composer.phar
+--vendor/*
+--!vendor/.gitkeep
 
 # Node Package Manager
 node_modules
