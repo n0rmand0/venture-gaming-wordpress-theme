@@ -109,12 +109,10 @@ function filter_templates($templates)
                     return [
                         "{$path}/{$template}.blade.php",
                         "{$path}/{$template}.php",
+                        "{$template}.blade.php",
+                        "{$template}.php",
                     ];
-                })
-                ->concat([
-                    "{$template}.blade.php",
-                    "{$template}.php",
-                ]);
+                });
         })
         ->filter()
         ->unique()
