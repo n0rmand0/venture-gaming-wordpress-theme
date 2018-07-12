@@ -8,3 +8,17 @@
   padding: 0 $base-spacing;
   margin: auto;
 }
+
+// css grid layouts
+.l-container--grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: $base-spacing;
+}
+
+.l-split {
+  grid-column: span 6;
+  @include media($medium) {
+    // grid-column: span 12;
+  }
+}

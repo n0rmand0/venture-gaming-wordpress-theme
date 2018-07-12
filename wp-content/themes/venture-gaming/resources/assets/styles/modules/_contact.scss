@@ -1,0 +1,30 @@
+.contact {
+    @extend %inverse;
+    background: #15182B;
+    padding: $large-spacing 0;
+
+
+
+
+}
+
+div.wpforms-container-full.contact__form .wpforms-form {
+
+    button[type=submit]{
+        @extend %button-base;
+    }
+
+    .wpforms-error,
+    .wpforms-required-label  {
+        color: $red;
+    }
+
+}
+
+.wpforms-confirmation-container-full {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 2em;
+    font-weight: 800;
+}

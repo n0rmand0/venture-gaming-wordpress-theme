@@ -1,2 +1,7 @@
 // SITE FOOTER LAYOUT STYLES
 ////////////////////////////////////////////////////////////////
+.site-footer{
+    @extend %inverse;
+    padding: $large-spacing 0;
+    background: #000;
+}

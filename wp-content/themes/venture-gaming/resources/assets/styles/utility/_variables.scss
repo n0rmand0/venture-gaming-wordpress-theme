@@ -3,7 +3,7 @@
 
 // Typography
 $base-font-family:'Helvetica', sans-serif;
-$secondary-font-family: $base-font-family;
+$secondary-font-family: 'Roboto', sans-serif;
 
 // Sizes
 $max-width: 1300px;
@@ -15,7 +15,8 @@ $large-spacing: $base-spacing * 2;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ccc;
-$red: tomato;
+$red: #FF6A39;
+$dark-red: #C7542E;
 
 // Font Colors
 $base-color: $red;
