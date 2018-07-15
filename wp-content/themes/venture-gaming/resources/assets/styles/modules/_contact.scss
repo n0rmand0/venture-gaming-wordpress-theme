@@ -1,12 +1,18 @@
 .contact {
     @extend %inverse;
     background: #15182B;
+    background-image: url("/wp-content/themes/venture-gaming/resources/assets/images/pittsburgh@2x.jpg");
+    background-position: bottom center;
+    background-size: cover;
     padding: $large-spacing 0;
 
+    @include media($small){
+        background-image: url("/wp-content/themes/venture-gaming/resources/assets/images/pittsburgh.jpg");
 
-
-
+    }
 }
+
+
 
 div.wpforms-container-full.contact__form .wpforms-form {
 

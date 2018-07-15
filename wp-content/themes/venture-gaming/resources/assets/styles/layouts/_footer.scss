@@ -5,3 +5,30 @@
     padding: $large-spacing 0;
     background: #000;
 }
+
+.site-footer-container {
+    max-width: $max-width;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr; 
+    padding: 0 $base-spacing;
+
+    @include media($medium){
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+.site-footer__info {
+    margin-bottom: $base-spacing;
+}
+
+.site-footer__logo {
+    width: 100%;
+    max-width: 300px;
+    justify-self: center;
+
+    @include media($small){
+        max-width: 200px;
+    }
+}

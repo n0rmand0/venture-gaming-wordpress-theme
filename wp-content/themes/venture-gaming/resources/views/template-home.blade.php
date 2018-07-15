@@ -6,6 +6,11 @@
 
 @section('content')
   <section class="hero">
+    <video class="hero__video" autoplay muted loop>
+      <source src="/wp-content/themes/venture-gaming/resources/assets/images/slots-hero.mp4" type="video/mp4">
+
+    </video>
+    <div class="hero__overlay"></div>
     <div class="l-container">
         <img class="hero__logo" src="/wp-content/themes/venture-gaming/resources/assets/images/venture-gaming-logo-full-color.png" alt="">
         <h2 class="hero__title">

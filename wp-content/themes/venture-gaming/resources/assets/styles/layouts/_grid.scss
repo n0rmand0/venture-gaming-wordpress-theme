@@ -12,13 +12,15 @@
 // css grid layouts
 .l-container--grid{
   display: grid;
+  margin: auto;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: $base-spacing;
+
+  @include media($small){
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 .l-split {
   grid-column: span 6;
-  @include media($medium) {
-    // grid-column: span 12;
-  }
 }
