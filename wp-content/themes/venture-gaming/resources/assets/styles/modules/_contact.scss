@@ -1,20 +1,23 @@
 .contact {
     @extend %inverse;
-    background: #15182B;
-    background-image: url("/wp-content/themes/venture-gaming/resources/assets/images/pittsburgh@2x.jpg");
-    background-position: bottom center;
-    background-size: cover;
-    padding: $large-spacing 0;
+    background: #12162B;
+    background-image: url("/wp-content/themes/venture-gaming/dist/images/pittsburgh@2x.jpg");
+    background-position:  0  bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: $large-spacing   0 20vw 0;
+
 
     @include media($small){
-        background-image: url("/wp-content/themes/venture-gaming/resources/assets/images/pittsburgh.jpg");
-
+        background-image: url("/wp-content/themes/venture-gaming/dist/images/pittsburgh.jpg");
+        background-size: 150% auto;
+        padding-bottom: 10rem;
     }
 }
 
 
 
-div.wpforms-container-full.contact__form .wpforms-form {
+.contact div.wpforms-container-full .wpforms-form {
 
     button[type=submit]{
         @extend %button-base;
@@ -27,10 +30,14 @@ div.wpforms-container-full.contact__form .wpforms-form {
 
 }
 
-.wpforms-confirmation-container-full {
+#wpforms-confirmation-8.wpforms-confirmation-container-full {
     background: none;
     color: #fff;
     border: none;
     font-size: 2em;
     font-weight: 800;
+}
+
+.wpforms-confirmation-container-full + div {
+    display: none;
 }
